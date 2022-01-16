@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', Arial, sans-serif;
+}
+
+.cover {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(10,20,30,0.7),rgba(10,20,30,0.7)), url(images/library.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.name-box {
+    color: #fff;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+
+.name {
+    font-size: 60px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.link {
+    display: inline-block;
+    padding: 12px 15px;
+}
+
+.link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f0f070;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.facilities h1 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col h3 {
+    padding: 10px 0;
+}
+
+.facilities-col p {
+    padding: 10px 0;
+    font-size: 15px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.text-box {
+    width: 100%;
+    min-height: 50vh;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(rgba(10,20,30,0.7),rgba(10,20,30,0.7)), url(images/library2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.text-box h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.r-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+.r-btn:hover {
+    border: 1px solid #f0f070;
+    background: #f0f070;
+    transition: 1s;
+    color: black;
+}
+
+.footer {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .name {
+        font-size: 30px;
+    }
+    
+    .link a {
+        font-size: 10px;
+    }
+}

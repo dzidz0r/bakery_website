@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+}
+
+.cover {
+    background-image: url(images/bbread.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+}
+
+.cover p {
+    text-align: left;
+    padding: 500px 0 0 30px;
+    font-family: 'Licorice', cursive;
+    font-size: 6rem;
+    color: whitesmoke;
+}
+
+.nav-bar {
+    padding: 20px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    gap: 2rem;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    font-size: 1rem;
+}
+
+.nav-bar li a:hover {
+    color: #e4e476;
+}
+
+section .welcome {
+    text-align: center;
+    color: #f0f0b2;
+    padding: 10px 0;
+}
+
+.welcome h2 {
+    font-size: 5rem;
+    color: #f0f0b2;
+
+}
